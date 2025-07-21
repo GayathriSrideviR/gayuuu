@@ -1,0 +1,20 @@
+<h1>GUESS THE NUMBER</h1>
+<input id="one">
+<button onclick="abc()">Guess</button>
+<p id="result">Your answer</p>
+<p id="none"></p>
+<script>
+    var a = document.getElementById("one");
+
+    function abc() {
+        var b = Math.floor((Math.random() * 10) + 1);
+        if (Number(a.value) == b) {
+            result.textContent = "YOU ARE CORRECT!";
+            none.textContent = " "
+        }
+        else {
+            result.textContent = "YOU ARE WRONG!";
+            none.textContent = "The random number is " + b;
+        }
+    }
+</script>
